@@ -20,13 +20,13 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Auth/>} />
+      <Route path="/" element={<CreateWallet />} />
       <Route path="login" element={<AuthIn />} />
       <Route path='/swap' element={<Home/>}/>
       <Route path="/addcoin" element={<Pooling />}/>
       <Route path="/notify" element={<Notify />} />
-      <Route path="/settings" element={<Settings />} />
-      <Route path="/createWallet" element={<CreateWallet />} />
+      <Route path="/settings" element={<Settings />} /><CreateWallet />
+      <Route path="/createWallet" element={<Auth/>} />
       <Route path="/settings" element={<Settings />} />
       </Routes>
   </BrowserRouter>
