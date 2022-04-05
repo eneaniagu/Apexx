@@ -1,24 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import { render } from "react-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+ import Auth from './Componets/Auth'
+import AuthIn from './Componets/AuthIn';
+import Home from './Componets/Layout/Home'
+import Pooling from './Componets/Layout/Pool'
+import Notify from './Componets/Layout/Notify'
+import Settings from './Componets/Layout/Settings';
+import CreateWallet from './Componets/Layout/CreateWall';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Auth/>} />
+      <Route path="login" element={<AuthIn />} />
+      <Route path='/swap' element={<Home/>}/>
+      <Route path="/addcoin" element={<Pooling />}/>
+      <Route path="/notify" element={<Notify />} />
+      <Route path="/settings" element={<Settings />} />
+      <Route path="/createWallet" element={<CreateWallet />} />
+      <Route path="/settings" element={<Settings />} />
+      </Routes>
+  </BrowserRouter>
+   </>
   );
 }
 

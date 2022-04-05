@@ -1,0 +1,31 @@
+
+
+export const  key = [
+    'language', 
+     'most', 
+     'public',
+      'private', 
+      'key',
+      'pairs' ,
+     'explanations',
+      'astonishingly',
+       'boring',
+       'boring', 
+       'fact',  
+       'way',
+        'actually',
+        'understanding',
+         'matters', 
+         'worse',
+         'once', 
+         'understand',
+         'realize',
+          'just',
+           'combed', 
+           'through',
+            'hours',
+            'explanation', 
+            'understand' , 
+             'basic',
+             'concept'
+];
