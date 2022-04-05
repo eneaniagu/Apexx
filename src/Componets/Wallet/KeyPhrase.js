@@ -10,7 +10,8 @@ import { Next } from "react-bootstrap/esm/PageItem";
 import BrainTin from "./BrainTin"
 
 
-export default function KeyPhrase() {
+export default function KeyPhrase(props) {
+     console.log("password",props.password)
     
     const [keyPhrase, setkeyPhrase] = useState('');
     const [confirm, setConfirm] = useState('');
@@ -58,7 +59,7 @@ for(var x=0; x<3; x++){
                 {
                     next ? 
                     <>
-                    <BrainTin keyvalue={Val} />
+                    <BrainTin keyvalue={Val} password={props.password} />
                     </>
 
                     : 

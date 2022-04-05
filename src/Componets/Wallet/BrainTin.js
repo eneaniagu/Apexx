@@ -16,18 +16,19 @@ export default function BrainTin(props) {
     
     const [keyPhrase, setkeyPhrase] = useState('');
     const [confirm, setConfirm] = useState('');
-    const [secnext, setsecNext] = useState('')
-    const [Val, setVal] = useState([])
+    const [secnext, setsecNext] = useState(false)
+    const [errmsg, setErrmsg] = useState()
 
    
 
     const savedata = async () => {
          if(keyPhrase === props.keyvalue) {
              console.log('yes')
-             setsecNext('next')
+             setsecNext(true)
+            
          }else{
-            setsecNext('')
-             console.log("ssjsjjjjj")
+            setsecNext(false)
+             setErrmsg('Wrong Key Phrase')
          }
 
     //    console.log(bonn)
@@ -48,9 +49,8 @@ export default function BrainTin(props) {
                 {
                secnext ? 
                     <>
-                <Auth />
+                <Auth keyphrase={props.keyvalue} password={props.password} />
                     </>
-
                     : 
                     <>
                     <div className="roomfac fontReg">
@@ -61,9 +61,22 @@ export default function BrainTin(props) {
                     <div className="warning">
                 <p> 
                    Select your key Phrase according the prevoius arrange your copied or listed down.
-        
                 </p>
                 </div>
+                    {
+                    errmsg ? 
+                    <>
+                     <div className="">
+                   <p className="eex">
+                       {errmsg}
+                   </p>
+                   </div>
+                    </>
+                    :
+                    <>
+                    
+                    </>
+                    }
     
                    
                     <div className="innerdiv">

@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form'
 import axios from 'axios'
 import KeyPhrase  from "./KeyPhrase"
 import Cookies from 'js-cookie';
+import { Link } from "react-router-dom"
 
 
 
@@ -48,7 +49,7 @@ export default function CreateWallet() {
                     navigate ? 
 
                     <>
-                     <KeyPhrase />
+                     <KeyPhrase password={password} />
                     </>
                     :
                    <>
@@ -84,6 +85,9 @@ export default function CreateWallet() {
                     <div className="innerdiv">
                        <button onClick={Continueup} className="">Continue</button>
                     </div>
+                    {/* <Link> */}
+                    <p className="p-link">Already have an account? <Link to="/login"><span style={{color: "yellow"}}>login</span></Link></p>
+                    {/* </Link> */}
                 </div>
                    </>
                 }
