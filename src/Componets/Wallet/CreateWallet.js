@@ -55,7 +55,7 @@ export default function CreateWallet() {
                    <>
                    <div className="roomfac fontReg">
                     <div className="ape-text">
-                       <h3> Welcome Apexx Wallet </h3>
+                       <h3> Welcome WAPEH Wallet </h3>
                        </div>
                        <div className="ape-text">
                         <p>A Secure Decentralize Wallet</p>
