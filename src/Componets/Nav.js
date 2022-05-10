@@ -12,7 +12,7 @@ export default function Nav () {
       <div className="">
       
       <div className="line">
-      <h2 className="logo-text">Apexx Wallet</h2>
+      <h2 className="logo-text">WAPEH Wallet</h2>
           <ul className="links">
              
               <li>
