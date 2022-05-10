@@ -45,7 +45,7 @@ export default function Auth(props) {
             <Container fluid>
                 <div className="roomfac fontReg">
                     <div className="ape-text">
-                       <h3> Welcome Apeh Wallet </h3>
+                       <h3> Welcome  WAPEH Wallet </h3>
                        </div>
                        <div className="ape-text">
                         <p>A Secure Decentralize Wallet with Backup restore </p>
